@@ -1,0 +1,42 @@
+/* src/pages/Projects.css */
+#projects {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .project-item {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    margin: 20px;
+    width: 300px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .project-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .project-item h3 {
+    margin: 0;
+  }
+  
+  .project-item p {
+    font-size: 14px;
+  }
+  
+  .project-item a {
+    color: #ffeb3b;
+    text-decoration: none;
+  }
+  
