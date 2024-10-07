@@ -39,7 +39,29 @@ const projects = [
     details: 'The Gestion Hopital project is a comprehensive hospital management system that includes various management functionalities such as user management, donations, localization, articles, and sponsorship. The system is built using a combination of JavaFX for desktop application, Symfony for web backend, and Flutter for mobile applications. The project ensures efficient handling of hospital operations and provides a unified platform for different management tasks.',
     image: '/images/javafx.png',
     sourceCode: 'https://github.com/attia12/JavaFx-project'
-  }
+  },
+  { 
+    id: 5, 
+    name: 'OAuth2 User Management with Next.js', 
+    description: 'Web application with user authentication and address validation.', 
+    tools: 'Next.js, OAuth2, API address.data.gouv.fr', 
+    details: `This project involves building a web application using Next.js that allows users to:
+    
+    1. **Create and authenticate users via OAuth2**: Users can log in securely using OAuth2 authentication through services such as Google or GitHub.
+    
+    2. **Update user information**: Authenticated users can modify their personal details such as name, first name, date of birth, address, and phone number. The interface is user-friendly and responsive.
+
+    3. **Address validation**: The system ensures that the user's address is within 50 km of Paris. This is achieved by integrating the API from address.data.gouv.fr, which verifies the distance based on the user's input.
+
+    4. **Deployment**: The project is deployed on Vercel, making it easily accessible for testing and live demos.
+
+    5. **GitHub Repository**: All code and configurations are stored in a GitHub repository, ensuring that it is version-controlled and well-organized.
+
+    **Project Objective**: This project is a complete, secure, and user-friendly web solution that demonstrates OAuth2 integration, API handling for location-based conditions, and deployment to modern cloud platforms like Vercel.`,
+    
+    image: '/images/authentification.png', 
+    link: 'https://github.com/yourusername/oauth2-nextjs'
+}
 ];
 
 const ProjectDetail = () => {

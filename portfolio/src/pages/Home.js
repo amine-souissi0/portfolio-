@@ -13,6 +13,9 @@ const Home = () => {
         <h2>Life Long Learner</h2>
         <p>I am a skilled and passionate web developer with experience in creating visually appealing and user-friendly websites.</p>
         <button className="hire-me">Hire me</button>
+
+
+        
       </div>
     </section>
   );

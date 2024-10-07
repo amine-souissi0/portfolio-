@@ -38,6 +38,15 @@ const projects = [
     tools: 'JavaFX, Symfony, Flutter', 
     details: 'The Gestion Hopital project is a comprehensive hospital management system that includes various management functionalities such as user management, donations, localization, articles, and sponsorship. The system is built using a combination of JavaFX for desktop application, Symfony for web backend, and Flutter for mobile applications. The project ensures efficient handling of hospital operations and provides a unified platform for different management tasks.',
     image: '/images/javafx.png'
+  },
+  { 
+    id: 5, 
+    name: 'OAuth2 User Management with Next.js', 
+    description: 'Web application with user authentication and address validation.', 
+    tools: 'Next.js, OAuth2, API address.data.gouv.fr', 
+    details: 'Developed a web application using Next.js that allows users to create and authenticate via OAuth2. Users can update personal information like name, birthdate, address, and phone number. The application validates user addresses to ensure they are within 50 km of Paris using the address.data.gouv.fr API. The project is deployed on Vercel and available for testing. The application emphasizes security and efficient user management.',
+    image: '/images/authentification.png', 
+    link: 'https://github.com/gocho1200/ParisConnect'
   }
 ];
 
