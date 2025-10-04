@@ -1,0 +1,57 @@
+/* about-demo/styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Poppins:wght@600;700&display=swap');
+
+:root{
+  --bg-gradient-start: #0b1220;
+  --bg-gradient-end: #111827;
+  --card-bg: rgba(255,255,255,0.04);
+  --card-blur: 8px;
+  --text-color: rgba(255,255,255,0.85);
+  --muted: rgba(255,255,255,0.6);
+  --accent: #6C5CE7;
+  --max-width: 980px;
+}
+
+*{box-sizing: border-box}
+body{
+  margin:0; font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; background: linear-gradient(180deg,var(--bg-gradient-start),var(--bg-gradient-end)); color:var(--text-color);
+}
+
+.about-section{
+  width:100%; min-height:70vh; padding:4rem 1rem; display:flex; align-items:center; justify-content:center;
+}
+
+.about-container{ width:100%; max-width:var(--max-width); margin:0 auto; display:grid; grid-template-columns:1fr; gap:2rem; align-items:center; animation:fadeUp 600ms ease both }
+@media(min-width:880px){ .about-container{ grid-template-columns:35% 65% } }
+
+.about-figure{ display:flex; align-items:center; justify-content:center }
+.about-figure img{ width:min(320px,100%); height:auto; border-radius:50%; object-fit:cover; box-shadow:0 6px 18px rgba(0,0,0,0.6); border:2px solid rgba(255,255,255,0.06) }
+
+.about-card{ padding:2rem; border-radius:14px }
+.glass-card{ background:var(--card-bg); backdrop-filter: blur(var(--card-blur)); -webkit-backdrop-filter: blur(var(--card-blur)); border:1px solid rgba(255,255,255,0.06) }
+
+.about-card h1{ font-family: 'Poppins', 'Inter', sans-serif; font-size:2rem; margin:0 0 0.25rem 0 }
+.tagline{ color:var(--muted); margin-bottom:1rem }
+.competencies{ color:var(--text-color); margin-bottom:1rem }
+
+.badges-grid{ display:grid; grid-template-columns:1fr; gap:1rem }
+@media(min-width:720px){ .badges-grid{ grid-template-columns:repeat(2,1fr) } }
+
+.badges{ list-style:none; display:flex; flex-wrap:wrap; gap:0.5rem; padding:0; margin:0 0 0.75rem 0 }
+.badge{ background:rgba(255,255,255,0.04); padding:0.35rem 0.6rem; border-radius:999px; font-size:0.85rem; color:var(--text-color); border:1px solid rgba(255,255,255,0.04) }
+
+.btn{ display:inline-block; padding:0.6rem 1rem; background:var(--accent); color:white; border-radius:8px; text-decoration:none; font-weight:600; transition: transform 160ms ease, box-shadow 160ms ease }
+.btn:focus{ outline:3px solid rgba(108,92,231,0.2); outline-offset:2px }
+.btn:hover{ transform: translateY(-3px); box-shadow:0 8px 24px rgba(108,92,231,0.12) }
+.btn-outline{ background:transparent; border:1px solid rgba(255,255,255,0.08); color:var(--text-color) }
+
+.cta-row{ margin-top:1rem; display:flex; gap:0.75rem; flex-wrap:wrap }
+
+@keyframes fadeUp{ from{ opacity:0; transform: translateY(14px) } to{ opacity:1; transform: translateY(0) } }
+
+/* Accessibility helpers */
+.sr-only{ position:absolute !important; height:1px; width:1px; overflow:hidden; clip:rect(1px,1px,1px,1px); white-space:nowrap; border:0; padding:0; margin:-1px }
+
+/* Tokens: change these to customise appearance */
+/* --accent: primary brand color */
+/* --card-blur: adjust glass effect */

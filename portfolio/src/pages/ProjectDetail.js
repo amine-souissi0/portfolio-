@@ -62,6 +62,38 @@ const projects = [
     image: '/images/authentification.png', 
     link: 'https://github.com/yourusername/oauth2-nextjs'
 }
+,
+{
+  id: 6,
+  name: 'ADC WebApp',
+  description: 'CGSS Shift Management Project Web Application',
+  tools: 'Full-stack (Node/Express, React, Database)',
+  details: 'ADC WebApp is a full-stack web application. It includes server and client code, documentation, and a demo video showcasing the core features and installation steps.',
+  image: '/cgss.png',
+  sourceCode: 'https://github.com/amine-souissi0/adc_webapp',
+  documentation: 'https://github.com/amine-souissi0/documentaion',
+  demoVideo: 'https://drive.google.com/file/d/1_26Y8SUsOXj2JTDJoT_BaoieFT8pr4IR/view?usp=sharing'
+}
+,
+{
+  id: 7,
+  name: 'Event Booking API (Laravel)',
+  description: 'RESTful API for event booking built with Laravel.',
+  tools: 'Laravel, PHP, MySQL, REST API',
+  details: 'A RESTful Event Booking API built with Laravel. Provides endpoints for events, bookings and user authentication. Includes database migrations, validation and API documentation in the repository.',
+  image: '/laravel.jpg',
+  sourceCode: 'https://github.com/amine-souissi0/Event-Booking-API-Laravel/tree/master'
+}
+,
+{
+  id: 8,
+  name: 'AI Agent Orchestrator',
+  description: 'Orchestrator for AI agents to run coordinated workflows.',
+  tools: 'Python, Node, Orchestration',
+  details: 'AI Agent Orchestrator coordinates multiple AI agents to perform multi-step workflows. See repository for installation and usage.',
+  image: '/ai.jpg',
+  sourceCode: 'https://github.com/amine-souissi0/ai-agent-orchestrator'
+}
 ];
 
 const ProjectDetail = () => {
@@ -87,6 +119,16 @@ const ProjectDetail = () => {
       {project.sourceCode && (
         <p>
           <a href={project.sourceCode} target="_blank" rel="noopener noreferrer">View Source Code</a>
+        </p>
+      )}
+      {project.documentation && (
+        <p>
+          <a href={project.documentation} target="_blank" rel="noopener noreferrer">Project Documentation</a>
+        </p>
+      )}
+      {project.demoVideo && (
+        <p>
+          <a href={project.demoVideo} target="_blank" rel="noopener noreferrer">Demo Video</a>
         </p>
       )}
     </section>

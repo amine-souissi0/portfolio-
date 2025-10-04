@@ -48,6 +48,33 @@ const projects = [
     image: '/images/authentification.png', 
     link: 'https://github.com/gocho1200/ParisConnect'
   }
+  ,{ 
+    id: 6,
+    name: 'CGSS Shift Management Project',
+    description: 'Web application for ADC project (full source, docs and demo).',
+    tools: 'Full-stack (backend & frontend)',
+    details: 'ADC WebApp is a full-stack application. Repository, documentation and a demo video are available via the links on the project detail page.',
+    image: '/cgss.png',
+    link: 'https://github.com/amine-souissi0/adc_webapp'
+  }
+  ,{
+    id: 7,
+    name: 'Event Booking API (Laravel)',
+    description: 'RESTful API for event booking built with Laravel.',
+    tools: 'Laravel, PHP, MySQL, REST API',
+    details: 'A RESTful Event Booking API built with Laravel. Provides endpoints for events, bookings and user authentication. Includes database migrations, validation and API documentation in the repository.',
+    image: '/laravel.jpg',
+    link: 'https://github.com/amine-souissi0/Event-Booking-API-Laravel/tree/master'
+  }
+  ,{
+    id: 8,
+    name: 'AI Agent Orchestrator',
+    description: 'Orchestrator for AI agents to run coordinated workflows.',
+    tools: 'Python, Node, Orchestration',
+    details: 'AI Agent Orchestrator coordinates multiple AI agents to perform multi-step workflows. See repository for installation and usage.',
+    image: '/ai.jpg',
+    link: 'https://github.com/amine-souissi0/ai-agent-orchestrator'
+  }
 ];
 
 const Projects = () => {

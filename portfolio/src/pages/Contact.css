@@ -42,3 +42,7 @@
     background-color: #555;
   }
   
+  /* note link */
+  #contact .note { margin-top: 0.75rem; color: #eee; }
+  #contact .note a { color: #9b8cff; text-decoration: underline; }
+  
